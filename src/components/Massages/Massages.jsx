@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from './Dialogs.module.css';
+import classes from './Massages.module.css';
 
-const Dialogs = (props) => {
+const Massages = (props) => {
   return (
       <div>
-          Dialogs
+          Massages
       </div>
   )
 }
 
-export default Dialogs;
+export default Massages;

@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from './Massages.module.css';
+import classes from './News.module.css';
 
-const Massages = (props) => {
+const News = (props) => {
   return (
       <div>
-          Massages
+          News
       </div>
   )
 }
 
-export default Massages;
+export default News;
