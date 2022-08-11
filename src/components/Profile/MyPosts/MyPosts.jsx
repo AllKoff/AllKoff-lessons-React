@@ -4,7 +4,7 @@ import Post from './Post/Post';
 
 const MyPosts = (props) => {
 
-    let postsElements = props.postData.map( p => <Post message={p.message} Like={p.Like} DisLike={p.DisLike}/>);
+    let postsElements = props.profilePage.postData.map( p => <Post message={p.message} Like={p.Like} DisLike={p.DisLike}/>);
 
     // К postData.map добавляем props
 

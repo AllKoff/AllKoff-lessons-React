@@ -20,11 +20,10 @@ const App = (props) => {
                 <div className='app-wrapper-content'>
                     <Routes>
 
-                        <Route path='/Profile' element={<Profile postData={props.postData}/>}/>
-                        {/*Добавили атрибут postData с объектом для передачи postData.
-                        Для выноса на уровень index.js к postData добавляем props*/}
-                        <Route path='/Dialogs/*' element={<Dialogs dialogsData={props.dialogsData}
-                                                                   messagesData={props.messagesData}/>}/>
+                        <Route path='/Profile' element={<Profile postData={props.state.profilePage}/>}/>
+                        {/* У нас теперь в props новый атрибут state, который отдает данные дальше */}
+                        <Route path='/Dialogs/*' element={<Dialogs dialogsData={props.state.dialogsPage}
+                                                                   messagesData={props.state.dialogsPage}/>}/>
                         <Route path='/news' element={<News/>}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/settings' element={<Settings/>}/>
