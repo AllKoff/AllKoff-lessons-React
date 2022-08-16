@@ -20,10 +20,17 @@ const App = (props) => {
                 <div className='app-wrapper-content'>
                     <Routes>
 
+<<<<<<< HEAD
                         <Route path='/Profile' element={<Profile postData={props.state.profilePage}/>}/>
                         {/* У нас теперь в props новый атрибут state, который отдает данные дальше */}
                         <Route path='/Dialogs/*' element={<Dialogs dialogsData={props.state.dialogsPage}
                                                                    messagesData={props.state.dialogsPage}/>}/>
+=======
+                        <Route path='/Profile' element={<Profile postData={props.appState.postData}/>}/>
+                        {/* У нас теперь в props новый атрибут state, который отдает данные дальше */}
+                        <Route path='/Dialogs/*' element={<Dialogs dialogsData={props.appState.dialogsData}
+                                                                   messagesData={props.appState.messagesData}/>}/>
+>>>>>>> 29lesson
                         <Route path='/news' element={<News/>}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/settings' element={<Settings/>}/>
