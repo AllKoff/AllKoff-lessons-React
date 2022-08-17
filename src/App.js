@@ -19,18 +19,15 @@ const App = (props) => {
                 <Navbar/>
                 <div className='app-wrapper-content'>
                     <Routes>
+                        <Route path='/Dialogs/*' element={<Dialogs state={props.appState.messagesPage}/>}/>
+                        <Route path='/Profile' element={<Profile state={props.appState.profilePage}/>}/>
 
-<<<<<<< HEAD
-                        <Route path='/Profile' element={<Profile postData={props.state.profilePage}/>}/>
-                        {/* У нас теперь в props новый атрибут state, который отдает данные дальше */}
-                        <Route path='/Dialogs/*' element={<Dialogs dialogsData={props.state.dialogsPage}
-                                                                   messagesData={props.state.dialogsPage}/>}/>
-=======
-                        <Route path='/Profile' element={<Profile postData={props.appState.postData}/>}/>
-                        {/* У нас теперь в props новый атрибут state, который отдает данные дальше */}
-                        <Route path='/Dialogs/*' element={<Dialogs dialogsData={props.appState.dialogsData}
-                                                                   messagesData={props.appState.messagesData}/>}/>
->>>>>>> 29lesson
+
+
+                        {/*<Route path='/Dialogs/*' element={<Dialogs dialogsData={props.appState.messagesPage.dialogsData}
+                                                                   messagesData={props.appState.messagesPage.messagesData}/>}/>
+                        <Route path='/Profile' element={<Profile postData={props.appState.profilePage.postData}/>}/>
+                         У нас теперь в props новый атрибут state, который отдает данные дальше */}
                         <Route path='/news' element={<News/>}/>
                         <Route path='/music' element={<Music/>}/>
                         <Route path='/settings' element={<Settings/>}/>
