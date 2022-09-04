@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 const DialogItem = (props) => {
     let path = '/dialogs/' + props.id; // отдельная переменная path
 
-    return <div className={classes.dialog + ' ' + classes.active}>
+    return <div className={classes.dialogsItems}>
         {/*<NavLink to='/dialogs/1'>Alex</NavLink> вместо Алекс и 1 мы подставляем значения prors.name и
         props.id. Значения подставляем в виде js-кода. Чтобы путь объединить с id склеиваем строки.
         Все оборачиваем в фигурные скобки */}

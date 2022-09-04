@@ -10,7 +10,7 @@ const MyPosts = (props) => {
 
 
     return (
-        <div className={classes.postsBlok}>
+        <div className={classes.postsBloc}>
             <h3> My post </h3>
             <div>
                 <textarea></textarea>
