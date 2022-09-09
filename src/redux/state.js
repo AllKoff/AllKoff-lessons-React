@@ -27,4 +27,16 @@ let state = {
     sidebar: {}
 }
 
+export let addPost = (postMessage) => {
+    debugger;
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        Like: 0,
+        DisLike: 0
+    }
+    state.profilePage.postData.push(newPost);
+};
+
+
 export default state;
